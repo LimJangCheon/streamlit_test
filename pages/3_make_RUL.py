@@ -2,25 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.set_page_config(
-    page_icon="😊",
-    page_title="스트림릿 공부중!",
-    layout="wide",
-)
-
-st.subheader("도큐먼트")
-
-if st.button("app.py 코드보기"):
-    code ='''
-    import streamlit as st
-import pandas as pd
-import numpy as np
-
 from time import sleep
 
 #페이지 기본성정
 st.set_page_config(
-    page_icon="😊",
+    page_icon="★",
     page_title="스트림릿 공부중!",
     layout="wide",
 )
@@ -46,6 +32,3 @@ chart_data = pd.DataFrame(
 
 #컬럼 나머지 부분에 라인차트 생성
 cols[2].line_chart(chart_data)
-
-    '''
-    st.code(code, language="python")
